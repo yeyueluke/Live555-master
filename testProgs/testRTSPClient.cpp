@@ -73,7 +73,7 @@ int main(int argc, char** argv) {
 		usage(*env, argv[0]);
 		return 1;
 	}
-	ourAuthenticator = new Authenticator("admin", "Password01!");
+	ourAuthenticator = new Authenticator("admin", "Password01!");//authorize with useName and Password
 	// There are argc-1 URLs: argv[1] through argv[argc-1].  Open and start streaming each one:
 	for (int i = 1; i <= argc - 1; ++i) {
 		openURL(*env, argv[0], argv[i]);
